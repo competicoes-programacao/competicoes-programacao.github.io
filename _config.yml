@@ -1,0 +1,31 @@
+baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+# url: "http://ellekasai.github.io" # the base hostname & protocol for your site
+title: "Competições de Programação"
+
+# This is used by feed.xml. Uncomment if you want to use it.
+# description: "..."
+
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+permalink: :categories/:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      hide_sidebar: true
+
